@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Form for capturing user information">
+  <meta name="author" content="Olivia Cindyani Kusuma">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/form.html">Form</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Personal Information</h1>
+    <form method="POST" action="http://localhost:3000/profile">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      <div>
+        <p>Gender:</p>
+        <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+        <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+        <label><input type="radio" id="other" name="gender" value="other"> Other</label>
+      </div>
+      <div>
+        <p>Hobbies:</p>
+        <label><input type="checkbox" id="reading" name="hobbies" value="reading"> Reading</label>
+        <label><input type="checkbox" id="traveling" name="hobbies" value="traveling"> Traveling</label>
+        <label><input type="checkbox" id="photography" name="hobbies" value="photography"> Photography</label>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="newzealand">New Zealand</option>
+          <option value="uk">United Kingdom</option>
+          <option value="norway">Norway</option>
+          <option value="sweden">Sweden</option>
+          <option value="denmark">Denmark</option>
+        </select>
+      </div>
+      <button type="submit" style="margin-top: 10px;">Submit form</button>
+    </form>
+  </main>
+  <footer>&copy; 2023 OCK's Photography</footer>
+</body>
+</html>
